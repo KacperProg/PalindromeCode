@@ -6,11 +6,11 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        String word = "kayakkayak";
-        String word1 = "oaaojsei";
-        String word3 = "kayakkayak";
-        boolean isWordAPalindrome = isPalindrome(word3);
-        System.out.println("It is : " + isWordAPalindrome);
+        String palindrome = "kayakkayak";
+        String nonPalindrome = "oaaojsei";
+        String nonPalindrome1 = "kayakkoyak";
+        boolean isWordAPalindrome = isPalindrome(palindrome);
+        System.out.println("The word is a palindrome : " + isWordAPalindrome);
     }
 
     private static boolean isPalindrome(String word) {
