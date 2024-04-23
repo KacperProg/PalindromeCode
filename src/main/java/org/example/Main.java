@@ -8,21 +8,20 @@ public class Main {
 
         String word = "kayakkayak";
         String word1 = "oaaojsei";
-        String word3 = "kayakkoyak";
+        String word3 = "kayakkayak";
         boolean isWordAPalindrome = isPalindrome(word3);
         System.out.println("It is : " + isWordAPalindrome);
     }
 
-    private static boolean isPalindrome(String word){
+    private static boolean isPalindrome(String word) {
         List<String> splitWord = Arrays.asList(word.split(""));
-        for (int i=0;i<(splitWord.size()+1)/2;i++){
-            if(splitWord.get(i).equals(splitWord.get(splitWord.size()-(i+1)))){
-                return true;
-            }else{
+        int halfLength = splitWord.size() / 2;
+        for (int i = 0; i < halfLength; i++) {
+            if (!splitWord.get(i).equals(splitWord.get(splitWord.size() - 1 - i))) {
                 return false;
             }
-
         }
-        return false;
+        return true;
     }
+
 }
