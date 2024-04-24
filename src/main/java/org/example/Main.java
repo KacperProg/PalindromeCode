@@ -17,7 +17,9 @@ public class Main {
         List<String> splitWord = Arrays.asList(word.split(""));
         int halfLength = splitWord.size() / 2;
         for (int i = 0; i < halfLength; i++) {
-            if (!splitWord.get(i).equals(splitWord.get(splitWord.size() - 1 - i))) {
+            if (!splitWord.get(i).equals(
+                    splitWord.get(splitWord.size() - 1 - i))
+            ) {
                 return false;
             }
         }
